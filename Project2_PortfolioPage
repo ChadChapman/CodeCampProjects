@@ -1,0 +1,21 @@
+<div class="container-fluid">
+
+
+ <div class="row">
+  <div class="col-xs-12" <div class="col-xs-4">
+    <button class="btn btn-block">codeCrab</button>
+  </div>
+    <!--
+    Need to find a way to make these buttons go to specificed spots on the page
+    </-->
+    <div class="col-xs-4">
+      <button class="btn btn-block">About</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block">Portfolio</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block">Contact</button>
+    </div>
+  </div>
+</div>
