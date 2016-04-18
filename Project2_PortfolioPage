@@ -1,23 +1,23 @@
 <div class="container-fluid">
 
- <div class="row header-row">
+  <div class="row header-row">
     <!--
     Need to find a way to make these buttons go to specificed spots on the page
     </-->
-   <div class="col-md-4">
-     <button class="btn btn-block btn-head btn-primary">codeCrab</button>   
-   </div>                 
-   <div class="col-md-1 ">
+    <div class="col-md-4">
+      <button class="btn btn-block btn-head btn-primary">codeCrab</button>
+    </div>
+    <div class="col-md-1 ">
       <button class="btn btn-block btn-head ">About</button>
     </div>
-   <div class="col-md-1">
+    <div class="col-md-1">
       <button class="btn btn-block btn-head btn-primary btn-lg">Portfolio</button>
     </div>
-   <div class="col-md-1">
+    <div class="col-md-1">
       <button class="btn btn-block btn-head btn-primary">Contact</button>
     </div>
- </div>
- <!--
+  </div>
+  <!--
 ok now time to quit messing around with nav bar and get content on
 todo list:
 get all content on page
@@ -28,12 +28,29 @@ nav bar also fades away until at the bottom when it reappears
 -->
   <div class="row about-me">
     <div class="col-md-8 about-me-text text-right">
-      <p>Hi, my name is Chad and I'm a budding UI/UX developer, Computer Science student and internship hunter.  I have experience with the design and creation of content, client communication, OOP principles and test-driven deployment.  My focus is on software development and project management.  I am a fan of Python, Java, seafood and most of all learning new things!</p>
-      <p class="strong-me-text"><b>Student - Leader - User Experience Enthusiast</b></p>    
+      <p>Hi, my name is Chad and I'm a budding UI/UX developer, Computer Science student and internship hunter. I have experience with the design and creation of content, client communication, OOP principles and test-driven deployment. My focus is on software
+        development and project management. I am a fan of Python, Java, seafood and most of all learning new things!</p>
+      <p class="strong-me-text"><b>Student - User Experience Enthusiast</b></p>
+      <div class="horizontal-line">
+        <span class="topLineImg">
+          <i class="fa fa-desktop fa-5x" aria hidden="true"></i>
+          <i class="fa fa-terminal fa-5x" aria hidden="true"></i>
+          <i class="fa fa-code-fork fa-5x" aria hidden="true"></i>
+          <i class="fa fa-database fa-5x" aria hidden="true"></i>
+          <i class="fa fa-mobile fa-5x" aria hidden="true"></i>                                                  
+          </span>
+      </div>
     </div>
-    
-   <div class="col-md-4 about-me-pic">
-     <a href="https://github.com/ChadChapman"><img class="img-responsive thin-gray-border me-image" src="https://bit.ly/fcc-relaxing-cat"></a>
-   </div>
+
+    <div class="col-md-4 about-me-pic">
+      <a href="https://github.com/ChadChapman"><img class="img-responsive thin-gray-border me-image" src="https://bit.ly/fcc-relaxing-cat"></a>
+    </div>
   </div>
+  <div class="portfolio-links">
+    <div class="row">
+      <div class="col-md-6 column1"></div>
+      <div class="col-md-6 column2"></div>
+    </div>
+  </div>
+</div>
 </div>
