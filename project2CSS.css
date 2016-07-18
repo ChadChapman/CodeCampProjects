@@ -1,0 +1,117 @@
+@import 'lesshat';
+body {
+  background-color: gray;
+}
+
+.header-row {
+  background-color: purple;
+  padding: 30px;
+}
+
+.btn-head {
+  background-color: purple;
+  font-size: 28px;
+  font: center;
+  color: gray;
+  hover: gray;
+  border-color: purple;
+}
+
+.about-me {
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: lightgray;
+  border:2px;
+  border-color: darkgray;
+  border-style: solid;
+}
+.portfolio-links{
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 2px red solid;
+  background-color: lightgray;
+  
+}
+
+.contact-me-hidden{
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 2px blue solid;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.about-me-text {
+  padding-top: 20px;
+  background-color: light gray;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.thin-gray-border {
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.me-image {
+  margin: 40px;
+}
+
+.strong-me-text {
+  font-size: 30px;
+}
+
+.fa-mobile{
+  margin-left:10%;
+  padding-left:2%;
+  
+}
+.fa-database{
+  margin-left:10%;
+}
+.fa-code-fork{
+  margin-left:10%;
+}
+.fa-terminal{
+  margin-left:10%;
+}
+.fa-desktop{
+  
+}
+.pPics{
+  max-height: 400px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+#wine-pic{
+  max-width: 90%;
+  /*this does nothing, but wanted to isolate it for practice*/
+}
+#cust-contact-info{
+  font-size: 24px;
+}
+
+.semi-footer{
+  background-color: green;
+}
+.faf{
+border-width: 10px;
+border-radius: 50%;
+border-style: solid;  
+background-color: blue;
+
+}
+
+.footer-right-text{
+  text-align: center;
+  font-color: fff;
+ 
+
+.footer{
+  
+
+}
+
