@@ -108,10 +108,14 @@ background-color: blue;
 .footer-right-text{
   text-align: center;
   font-color: fff;
- 
-
-.footer{
-  
-
 }
 
+.navbar-default > li > a {
+  padding-top: 5px !important; 
+  padding-bottom: 5px !important; 
+} 
+
+.navbar-default{
+  min-height: 28px !important;
+}
+  
