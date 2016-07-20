@@ -1,22 +1,23 @@
 <div class="container-fluid">
-
-  <div class="row header-row">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="row header-row">
     <!--
     Need to find a way to make these buttons go to specificed spots on the page
     </-->
     <div class="col-md-4">
       <button class="btn btn-block btn-head btn-primary">codeCrab</button>
     </div>
-    <div class="col-md-1 ">
-      <button class="btn btn-block btn-head ">About</button>
+    <div class="col-md-2 ">
+      <button class="btn btn-block btn-head btn-primary btn-lg">About</button>
     </div>
-    <div class="col-md-1">
+    <div class="col-md-2">
       <button class="btn btn-block btn-head btn-primary btn-lg">Portfolio</button>
     </div>
-    <div class="col-md-1">
-      <button class="btn btn-block btn-head btn-primary">Contact</button>
+    <div class="col-md-2">
+      <button class="btn btn-block btn-head btn-primary btn-lg">Contact</button>
     </div>
   </div>
+</nav>
   <!--
 ok now time to quit messing around with nav bar and get content on
 todo list:
@@ -26,19 +27,21 @@ figure out scrolling with nav bar
 nav bar also fades away until at the bottom when it reappears
 
 -->
-  <div class="row about-me">
-    <div class="col-md-8 about-me-text text-center">
-      <p>Hi, my name is Chad and I'm a budding UI/UX developer, Computer Science student and internship hunter. I have experience with the design and creation of content, client communication, OOP principles and test-driven deployment. My focus is on software
-        development and project management. I am a fan of Python, Java, seafood and most of all learning new things!</p>
+<div class="row about-me">
+  <div class="col-md-8 about-me-text text-center">
+    <p>Hi, my name is Chad and I'm a budding UI/UX developer, Computer Science student and internship hunter. I have experience with the design and creation of content, client communication, OOP principles and test-driven deployment. My focus is on software
+      development and project management. I am a fan of Python, Java, seafood and most of all learning new things!</p>
       <p class="strong-me-text text-center"><b>Student - User Experience Enthusiast</b></p>
       <div class="horizontal-line">
-        <span class="topLineImg">
-          <i class="fa fa-desktop fa-5x" aria hidden="true"></i>
-          <i class="fa fa-terminal fa-5x" aria hidden="true"></i>
-          
-          <i class="fa fa-database fa-5x" aria hidden="true"></i>
-          <i class="fa fa-mobile fa-5x" aria hidden="true"></i>                                                  
+        <span>
+          <span class="topLineImg">
+            <i class="fa fa-desktop fa-5x" aria hidden="true"></i>
+            <i class="fa fa-terminal fa-5x" aria hidden="true"></i>
+
+            <i class="fa fa-database fa-5x" aria hidden="true"></i>
+            <i class="fa fa-mobile fa-5x" aria hidden="true"></i>                                                  
           </span>
+        </span>
       </div>
     </div>
 
@@ -50,7 +53,7 @@ nav bar also fades away until at the bottom when it reappears
     <div class="row">
       <div class="col-md-6 column1">
         <a href='#'>
-        <img class="pPics pPics-links-left img-responsive" src="http://www.insidevancouver.ca/wp-content/uploads/2013/05/prawn-550x550.jpg">
+          <img class="pPics pPics-links-left img-responsive" src="http://www.insidevancouver.ca/wp-content/uploads/2013/05/prawn-550x550.jpg">
         </a>
       </div>
       <div class="col-md-6 column2">
@@ -62,7 +65,7 @@ nav bar also fades away until at the bottom when it reappears
     <div class="row">
       <div class="col-md-6 column1">
         <a href='#'>
-        <img class="pPics pPics-links-left img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Brown_Leghorn_rooster_in_Australia.jpg">
+          <img class="pPics pPics-links-left img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Brown_Leghorn_rooster_in_Australia.jpg">
         </a>
       </div>
       <div class="col-md-6 column2">
@@ -84,68 +87,90 @@ nav bar also fades away until at the bottom when it reappears
   </div>
   <div class="contact-form">
     <div class="row">
-      <div class="col-md-12">
-        
-          <span class="contact-me-bar">
-            <h1 h1. Bootstrap heading class="text-center" id="contact-header"><i class="fa fa-code-fork fa-3x" aria hidden="true"></i><strong>Contact Me</strong><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></h1>
-          </span>
+      <div class="col-sm-12">
+        <span class="contact-me-bar">
+          <h1 h1. Bootstrap heading class="text-center" id="contact-header"><i class="fa fa-code-fork fa-3x" aria hidden="true"></i><strong>Contact Me</strong><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></h1>
+        </span>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <p id="contact-me-text" class="lead">Hello, please drop me a line</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="well">
-          <form class="text-center" id="cust-contact-info" action="/submit-cust-info">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email address">
-            <input type="text" placeholder="Phone number">
-            <input type="text" placeholder="Message">
-            <button type="submit">send</button>
-          </form>
-        </div>
+    <div class="row contactMeRow">
+    </div class="well">
+    <div class="col-sm-6" id="contact-me-text">
+      <p class="lead">Hello, please drop me a line</p>
+    </div>
+  </div>
+</div>
+
+<form class="form-horizontal text-center" role="form" id="cust-contact-info" action="/submit-cust-info">
+  <div class="form-group">
+    <div class="col-sm-6"> 
+      <input type="text" placeholder="Name" id="inputName">
+    </div>
+    <div class="col-sm-6">
+      <input type="email" placeholder="Email address" id="inputEmail">
+    </div>
+    <div class="col-sm-6">
+      <input type="text" placeholder="Phone number" id="inputPhone">
+    </div>
+    <div class="col-sm-6">  
+      <input type="text" placeholder="Message" id="inputMsg">
+    </div>
+    
+  </div>
+  <div class="form-group">
+    <div class="col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> I am not a bot
+        </label>
       </div>
     </div>
   </div>
-  <div class="semi-footer">
-    <div class="row">
-      <div class="semi-footer-text">
-        <div class="col-sm-6" id="footer-left-text">
-          <p>ABOUT THIS PAGE</p>
-          <p></p>
-          <p class="footer-left-text">Made with <i class="fa fa-coffee" aria-hidden="true"></i>
-            and <i class="fa fa-magic" aria-hidden="true"></i>.
-          </p>
-        </div>  
-      </div>
-      <div class="col-sm-6" id="footer-right-text">
-        <p id="footerRtText">hire me! or just follow my drivel</p>
-          <div class="footer-icons">
-          <span class="footer-icon-span center-block">
-            <a href='https://linkedin.com/in/chadtchapman'><i class="fa fa-linkedin faf img-responsive" aria-hidden="true"></i></a>
-            <a href='https://github.com/ChadChapman'><i class="fa fa-github faf img-responsive" aria-hidden="true"></i></a>
-            <a href='http://www.codecrab.me/'><i class="fa fa-pencil-square-o faf" aria-hidden="true"></i></a>
-                          
-                
-              <i class="fa fa-phone faf" id="fafon" aria-hidden="true"></i>
-
-          </span>
-          </div>
-      </div>
-
-
+  <div class="form-group">
+    <div class="col-sm-6">
+      <button type="submit" class="btn btn-default contactFormBtn"> Send </button>
     </div>
   </div>
-  <div class="footer">
-    <div class="row">
-      <div class="col-sm-12 footer-text">
-        <p>codeCrab <i class="fa fa-copyright" aria-hidden="true"></i> 2016 ARR (all rights reserved)
+</form>
+
+</div>
+</div>
+<div class="semi-footer">
+  <div class="row">
+    <div class="semi-footer-text">
+      <div class="col-sm-6" id="footer-left-text">
+        <p>ABOUT THIS PAGE</p>
+        <p></p>
+        <p class="footer-left-text">Made with <i class="fa fa-coffee" aria-hidden="true"></i>
+          and <i class="fa fa-magic" aria-hidden="true"></i>.
         </p>
+      </div>  
+    </div>
+    <div class="col-sm-6" id="footer-right-text">
+      <p id="footerRtText">hire me! or just follow my drivel</p>
+      <div class="footer-icons">
+        <span class="footer-icon-span center-block">
+          <a href='https://linkedin.com/in/chadtchapman'><i class="fa fa-linkedin faf img-responsive" aria-hidden="true"></i></a>
+          <a href='https://github.com/ChadChapman'><i class="fa fa-github faf img-responsive" aria-hidden="true"></i></a>
+          <a href='http://www.codecrab.me/'><i class="fa fa-pencil-square-o faf" aria-hidden="true"></i></a>
+
+
+          <i class="fa fa-phone faf" id="fafon" aria-hidden="true"></i>
+
+        </span>
       </div>
     </div>
+
+
   </div>
+</div>
+<div class="footer">
+  <div class="row">
+    <div class="col-sm-12 footer-text">
+      <p>codeCrab <i class="fa fa-copyright" aria-hidden="true"></i> 2016 ARR (all rights reserved)
+      </p>
+    </div>
+  </div>
+</div>
 </div>
 </div>
